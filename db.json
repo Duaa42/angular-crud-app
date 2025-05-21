@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": "Uswa",
+      "email": "uswa@test.com",
+      "age": 3,
+      "id": "f13e"
+    },
+    {
+      "name": "ss",
+      "email": "aa@test.com",
+      "age": 112,
+      "id": "8d56"
+    },
+    {
+      "name": "Aisha",
+      "email": "aisha@test.com",
+      "age": 45,
+      "id": "692c"
+    },
+    {
+      "id": "774f",
+      "name": "Duaa Waseem",
+      "email": "m@d.m",
+      "age": 22
+    },
+    {
+      "id": "ccd3",
+      "name": "Ahmad",
+      "email": "ahmad@test.com",
+      "age": 33
+    }
+  ]
+}
