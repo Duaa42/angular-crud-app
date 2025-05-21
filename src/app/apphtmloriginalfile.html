@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+
+<form #userForm="ngForm" (ngSubmit)="addUser(userForm.value)">
+  <input type="text" name="name" placeholder="enter name" [ngModel]="selectedUser?.name">
+  <br><br/>
+  <input type="text" name="email" placeholder="enter email" [ngModel]="selectedUser?.email">
+  <br><br/>
+  <input type="number" name="age" placeholder="enter age" [ngModel]="selectedUser?.age">
+  <br><br/>
+  @if(!selectedUser){
+    <button>Add user</button>
+  }@else{
+    <button>Update user</button>
+  }
+  
+</form>
+
+@for (item of users; track item.name) {
+  <ul>
+    <li>{{item.name}}</li>
+    <li>{{item.email}}</li>
+    <li>{{item.age}}</li>
+    <li><button (click)="deleteUser(item.id)">Delete</button></li>    
+    <li><button (click)="selectUser(item.id)">Update user</button></li>
+  </ul>
+}
+
+<!-- <app-footer></app-footer> -->
